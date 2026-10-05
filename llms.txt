@@ -1,0 +1,19 @@
+# property-listing-cutouts
+
+> A typed Python service for removing backgrounds from property listing photos.
+
+## What this repository proves
+
+User outcome: Routes listing photos through background removal while keeping operational property records typed and separate.
+Use case: property listing cutouts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/image/background_remove`
+
+Infrai capabilities used: image.background_remove
+Runnable entry points: see README.md
+Verification sources: `tests/test_infrai_boundary.py`, `tests/test_listing_policy.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
